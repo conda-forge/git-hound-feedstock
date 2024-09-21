@@ -1,5 +1,5 @@
 {% set name = "git-hound" %}
-{% set version = "1.7.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tillson/git-hound/archive/v{{ version }}.tar.gz
-  sha256: db285484c1377807e5f7d38bfad32e0ae547839c61e043ba74bf20f536246a33
+  sha256: b4e8b16414719f409ca58e6f517930c957580db957de2db6e15bcea4a69023a0
 
 build:
   number: 0
