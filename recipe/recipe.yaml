@@ -15,10 +15,17 @@ build:
 requirements:
   build:
     - ${{ compiler('go-cgo') }}
-    - ${{ compiler('c') }}
-    - ${{ stdlib('c') }}
     - go-licenses
     - pkg-config
+    - if: unix
+      then:
+        - ${{ compiler('c') }}
+        - ${{ stdlib('c') }}
+    - if: win
+      then:
+        - ${{ compiler('m2w64_c') }}
+        - ${{ stdlib('m2w64_c') }}
+        - posix
   host:
     - pcre
 
