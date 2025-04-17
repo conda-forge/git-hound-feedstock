@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tillson/git-hound/archive/v${{ version }}.tar.gz
-  sha256: 09c612ec1af1bbbc5e1fc2da449083c3f3d71f1230c6f7c912039ca2ea81a101
+  sha256: a5d76de9f3d24cf62ab239e4104daf39fc835323c30e750b8d7dde9f849b97dc
 
 build:
   number: 0
