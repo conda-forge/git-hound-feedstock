@@ -25,7 +25,7 @@ requirements:
       then:
         - ${{ compiler('m2w64_c') }}
         - ${{ stdlib('m2w64_c') }}
-        - posix
+        - m2-base
   host:
     - pcre
 
