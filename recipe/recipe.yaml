@@ -1,5 +1,5 @@
 context:
-  version: 2.0.0
+  version: "3.0.0"
 
 package:
   name: git-hound
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tillson/git-hound/archive/v${{ version }}.tar.gz
-  sha256: 10c06460b5449b69b5cdd1d5d39bdb9a40cc3d6cfd95e8cc45d1468229ae4558
+  sha256: a5d76de9f3d24cf62ab239e4104daf39fc835323c30e750b8d7dde9f849b97dc
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
       then:
         - ${{ compiler('m2w64_c') }}
         - ${{ stdlib('m2w64_c') }}
-        - posix
+        - m2-base
   host:
     - pcre
 
