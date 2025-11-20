@@ -1,5 +1,5 @@
 context:
-  version: "3.0.0"
+  version: "3.2"
 
 package:
   name: git-hound
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tillson/git-hound/archive/v${{ version }}.tar.gz
-  sha256: a5d76de9f3d24cf62ab239e4104daf39fc835323c30e750b8d7dde9f849b97dc
+  sha256: be883cd265a2cc049c9ed8c7bbf29dccf89789173b19b237618d9c9613ee9127
 
 build:
   number: 0
